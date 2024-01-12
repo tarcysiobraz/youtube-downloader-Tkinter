@@ -18,7 +18,7 @@ Este programa permite baixar vídeos e playlists do YouTube de maneira fácil e 
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/youtube-downloader.git
+   git clone [https://github.com/seu-usuario/youtube-downloader.git](https://github.com/tarcysiobraz/youtube-downloader-Tkinter.git)
    ```
 
 2. Navegue até o diretório do projeto:
