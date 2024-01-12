@@ -164,10 +164,22 @@ class YouTubeDownloaderApp:
             percentage = 100
         else:
             percentage = int((current / total) * 100)
+
         progress = current / total * 400
-        self.progress_label.config(text=f"{percentage}% concluído")
-        self.progress_bar.delete("all")
-        self.progress_bar.create_rectangle(0, 0, progress, 20, fill="#2e2e2e")
+
+        if hasattr(self, "progress_label"):
+            self.progress_label.config(text=f"{percentage}% concluído")
+
+        if hasattr(self, "progress_bar"):
+            self.progress_bar.delete("all")
+            self.progress_bar.create_rectangle(
+                0,
+                0,
+                progress,
+                20,
+                fill="#191970",
+            )
+
         self.root.update_idletasks()
 
 
